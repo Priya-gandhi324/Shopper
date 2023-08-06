@@ -78,17 +78,23 @@ WSGI_APPLICATION = 'shopper.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': '<DATABASE>',
+#         'USER': '<USER>',
+#         'PASSWORD': '<PASSWORD>',
+#         'HOST': '<HOST>',
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dabhqhc2t55c24',
-        'USER': 'xccdmltahrxhht',
-        'PASSWORD': 'dd4b3e412adc6a90e5fd8fac33553919b49849e064273c86ad260df3e70a0aa5',
-        'HOST': 'ec2-3-92-151-217.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
